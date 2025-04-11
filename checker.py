@@ -1,7 +1,11 @@
 import streamlit as st
 import requests
 # App Title
-st.title("🎉 JUPITER Airdrop Checker 🎉")
+col1, col2 = st.columns([1, 4])
+with col1:
+    st.image("https://pbs.twimg.com/profile_images/1661738815890022410/F8y4vBky_400x400.jpg", width=100)
+with col2:  
+    st.title("JUPITER Airdrop Checker")
 st.markdown("Enter your wallet address to check if you're eligible for an airdrop.")
 
 # User Input for Wallet Address
